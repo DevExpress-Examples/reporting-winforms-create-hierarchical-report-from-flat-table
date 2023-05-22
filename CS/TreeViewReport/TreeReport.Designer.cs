@@ -51,7 +51,7 @@
             this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(2.384186E-05F, 0F);
             this.xrSubreport1.Name = "xrSubreport1";
             this.xrSubreport1.SizeF = new System.Drawing.SizeF(750F, 21.95833F);
-            this.xrSubreport1.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrSubreport1_BeforePrint);
+            this.xrSubreport1.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.xrSubreport1_BeforePrint);
             // 
             // TopMargin
             // 
@@ -88,7 +88,7 @@
             this.TopMargin,
             this.BottomMargin});
             this.DataSource = this.bindingSource1;
-            this.Margins = new System.Drawing.Printing.Margins(50, 50, 50, 50);
+            this.Margins = new DevExpress.Drawing.DXMargins(50, 50, 50, 50);
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.Level});
             this.ReportPrintOptions.PrintOnEmptyDataSource = false;

@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using DevExpress.XtraReports.UI;
+using DevExpress.Drawing.Printing;
 
 namespace TreeViewReport {
     public partial class ChildReport : DevExpress.XtraReports.UI.XtraReport {
@@ -10,7 +11,7 @@ namespace TreeViewReport {
             InitializeComponent();
         }
 
-        private void xrSubreport1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+        private void xrSubreport1_BeforePrint(object sender, CancelEventArgs e) {
             XRSubreport subReport = sender as XRSubreport;
             ParentNode parentNode = this.GetCurrentRow() as ParentNode;
             ChildReport childReport = new ChildReport();
@@ -22,7 +23,7 @@ namespace TreeViewReport {
 
         void ReduceControlSize(XRSubreport subreport, int level) {
             XtraReport report = subreport.ReportSource;
-            report.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            report.PaperKind = DXPaperKind.Custom;
             report.PageWidth = (int)(PrintingSystem.PageSettings.UsablePageSize.Width - subreport.LocationF.X * (level - 1) + report.Margins.Right);
             subreport.WidthF = report.PageWidth;
             foreach(Band band in report.Bands)

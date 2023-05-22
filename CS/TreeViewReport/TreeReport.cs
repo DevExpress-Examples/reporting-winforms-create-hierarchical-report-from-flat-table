@@ -37,7 +37,7 @@ namespace TreeViewReport {
             this.CreateDocument();
         }        
 
-        private void xrSubreport1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+        private void xrSubreport1_BeforePrint(object sender, CancelEventArgs e) {
             XRSubreport subReport = sender as XRSubreport;                                    
             ChildReport childReport = new ChildReport();
             childReport.Parameters["Level"].Value = this.Parameters["Level"].Value;

@@ -152,7 +152,7 @@
             this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(20F, 0F);
             this.xrSubreport1.Name = "xrSubreport1";
             this.xrSubreport1.SizeF = new System.Drawing.SizeF(730F, 20F);
-            this.xrSubreport1.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrSubreport1_BeforePrint);
+            this.xrSubreport1.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.xrSubreport1_BeforePrint);
             // 
             // TopMargin
             // 
@@ -175,7 +175,7 @@
             this.Title.BorderColor = System.Drawing.Color.Black;
             this.Title.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.Title.BorderWidth = 1F;
-            this.Title.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
+            this.Title.Font = new DevExpress.Drawing.DXFont("Times New Roman", 20F, DevExpress.Drawing.DXFontStyle.Bold);
             this.Title.ForeColor = System.Drawing.Color.Maroon;
             this.Title.Name = "Title";
             // 
@@ -185,7 +185,7 @@
             this.FieldCaption.BorderColor = System.Drawing.Color.Black;
             this.FieldCaption.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.FieldCaption.BorderWidth = 1F;
-            this.FieldCaption.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.FieldCaption.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.FieldCaption.ForeColor = System.Drawing.Color.Maroon;
             this.FieldCaption.Name = "FieldCaption";
             // 
@@ -195,7 +195,7 @@
             this.PageInfo.BorderColor = System.Drawing.Color.Black;
             this.PageInfo.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.PageInfo.BorderWidth = 1F;
-            this.PageInfo.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.PageInfo.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F, DevExpress.Drawing.DXFontStyle.Bold);
             this.PageInfo.ForeColor = System.Drawing.Color.Black;
             this.PageInfo.Name = "PageInfo";
             // 
@@ -205,7 +205,7 @@
             this.DataField.BorderColor = System.Drawing.Color.Black;
             this.DataField.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.DataField.BorderWidth = 1F;
-            this.DataField.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.DataField.Font = new DevExpress.Drawing.DXFont("Times New Roman", 10F);
             this.DataField.ForeColor = System.Drawing.Color.Black;
             this.DataField.Name = "DataField";
             this.DataField.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -232,8 +232,8 @@
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.objectDataSource1});
             this.DataSource = this.objectDataSource1;
-            this.Margins = new System.Drawing.Printing.Margins(50, 50, 50, 50);
-            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.Margins = new DevExpress.Drawing.DXMargins(50, 50, 50, 50);
+            this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.Custom;
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.Level});
             this.ReportPrintOptions.DetailCountOnEmptyDataSource = 0;
