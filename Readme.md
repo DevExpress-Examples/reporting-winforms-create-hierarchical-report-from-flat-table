@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Reporting for WinForms - How to create a hierarchical report
+# Reporting for WinForms - How to create a hierarchical report based on data stored in a flat table
 
 This example illustrates how to create a hierarchical tree-like report based on data stored in a flat table. Data must meet certain requirements. Two additional fields are necessary to build a tree structure. The first field must contain unique values. The second field must contain values that indicate parent nodes for the current node. Here is a sample image illustrating the required structure.
 
@@ -28,4 +28,4 @@ The example's main report has the `Level` parameter to store the quantity of lev
 
 ## More Examples
 
-- [](https://github.com/DevExpress-Examples/Reporting-Create-a-Hierarchical-Report-in-Code)
+- [Reporting for WinForms - How to create a Hierarchical Report in Code](https://github.com/DevExpress-Examples/Reporting-Create-a-Hierarchical-Report-in-Code)
