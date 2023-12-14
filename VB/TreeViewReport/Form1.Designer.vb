@@ -95,7 +95,6 @@ Namespace TreeViewReport
             Dim superToolTip23 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
             Dim toolTipTitleItem23 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
             Dim toolTipItem23 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
-            Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TreeViewReport.Form1))
             Dim superToolTip24 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
             Dim toolTipTitleItem24 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
             Dim toolTipItem24 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
@@ -245,29 +244,40 @@ Namespace TreeViewReport
             Me.printPreviewRibbonPageGroup7 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
             Me.printPreviewRibbonPageGroup8 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
             Me.ribbonStatusBar1 = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
+            Me.Form1layoutControl1ConvertedLayout = New DevExpress.XtraLayout.LayoutControl()
+            Me.layoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
+            Me.PrintControlitem = New DevExpress.XtraLayout.LayoutControlItem()
+            Me.treeList1item = New DevExpress.XtraLayout.LayoutControlItem()
             CType((Me.treeList1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.documentViewerRibbonController1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.repositoryItemProgressBar1), System.ComponentModel.ISupportInitialize).BeginInit()
             CType((Me.repositoryItemZoomTrackBar1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.Form1layoutControl1ConvertedLayout), System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.Form1layoutControl1ConvertedLayout.SuspendLayout()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.PrintControlitem), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.treeList1item), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' treeList1
             ' 
             Me.treeList1.Cursor = System.Windows.Forms.Cursors.[Default]
-            Me.treeList1.Dock = System.Windows.Forms.DockStyle.Left
-            Me.treeList1.Location = New System.Drawing.Point(0, 0)
+            Me.treeList1.Location = New System.Drawing.Point(12, 12)
+            Me.treeList1.Margin = New System.Windows.Forms.Padding(4)
+            Me.treeList1.MinWidth = 23
             Me.treeList1.Name = "treeList1"
-            Me.treeList1.Size = New System.Drawing.Size(400, 626)
+            Me.treeList1.Size = New System.Drawing.Size(457, 553)
             Me.treeList1.TabIndex = 0
+            Me.treeList1.TreeLevelWidth = 21
             ' 
             ' documentViewer1
             ' 
-            Me.documentViewer1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.documentViewer1.IsMetric = False
-            Me.documentViewer1.Location = New System.Drawing.Point(400, 141)
+            Me.documentViewer1.Location = New System.Drawing.Point(473, 12)
+            Me.documentViewer1.Margin = New System.Windows.Forms.Padding(5)
             Me.documentViewer1.Name = "documentViewer1"
-            Me.documentViewer1.Size = New System.Drawing.Size(921, 458)
+            Me.documentViewer1.Size = New System.Drawing.Size(1056, 553)
             Me.documentViewer1.TabIndex = 1
             ' 
             ' documentViewerRibbonController1
@@ -279,16 +289,19 @@ Namespace TreeViewReport
             ' ribbonControl1
             ' 
             Me.ribbonControl1.AutoHideEmptyItems = True
+            Me.ribbonControl1.EmptyAreaImageOptions.ImagePadding = New System.Windows.Forms.Padding(35, 37, 35, 37)
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.printPreviewBarItem1, Me.printPreviewBarItem2, Me.printPreviewBarItem3, Me.printPreviewBarItem4, Me.printPreviewBarItem5, Me.printPreviewBarItem6, Me.printPreviewBarItem7, Me.printPreviewBarItem8, Me.printPreviewBarItem9, Me.printPreviewBarItem10, Me.printPreviewBarItem11, Me.printPreviewBarItem12, Me.printPreviewBarItem13, Me.printPreviewBarItem14, Me.printPreviewBarItem15, Me.printPreviewBarItem16, Me.printPreviewBarItem17, Me.printPreviewBarItem18, Me.printPreviewBarItem19, Me.printPreviewBarItem20, Me.printPreviewBarItem21, Me.printPreviewBarItem22, Me.printPreviewBarItem23, Me.printPreviewBarItem24, Me.printPreviewBarItem25, Me.printPreviewBarItem26, Me.printPreviewBarItem27, Me.printPreviewBarItem28, Me.printPreviewBarItem29, Me.printPreviewBarItem30, Me.printPreviewBarItem31, Me.printPreviewBarItem32, Me.printPreviewBarItem33, Me.printPreviewBarItem34, Me.printPreviewBarItem35, Me.printPreviewBarItem36, Me.printPreviewBarItem37, Me.printPreviewBarItem38, Me.printPreviewBarItem39, Me.printPreviewBarItem40, Me.printPreviewBarItem41, Me.printPreviewBarItem42, Me.printPreviewBarItem43, Me.printPreviewBarItem44, Me.printPreviewBarItem45, Me.printPreviewBarItem46, Me.printPreviewBarItem47, Me.printPreviewBarItem48, Me.printPreviewStaticItem1, Me.barStaticItem1, Me.progressBarEditItem1, Me.printPreviewBarItem49, Me.barButtonItem1, Me.printPreviewStaticItem2, Me.zoomTrackBarEditItem1})
-            Me.ribbonControl1.Location = New System.Drawing.Point(400, 0)
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.printPreviewBarItem1, Me.printPreviewBarItem2, Me.printPreviewBarItem3, Me.printPreviewBarItem4, Me.printPreviewBarItem5, Me.printPreviewBarItem6, Me.printPreviewBarItem7, Me.printPreviewBarItem8, Me.printPreviewBarItem9, Me.printPreviewBarItem10, Me.printPreviewBarItem11, Me.printPreviewBarItem12, Me.printPreviewBarItem13, Me.printPreviewBarItem14, Me.printPreviewBarItem15, Me.printPreviewBarItem16, Me.printPreviewBarItem17, Me.printPreviewBarItem18, Me.printPreviewBarItem19, Me.printPreviewBarItem20, Me.printPreviewBarItem21, Me.printPreviewBarItem22, Me.printPreviewBarItem23, Me.printPreviewBarItem24, Me.printPreviewBarItem25, Me.printPreviewBarItem26, Me.printPreviewBarItem27, Me.printPreviewBarItem28, Me.printPreviewBarItem29, Me.printPreviewBarItem30, Me.printPreviewBarItem31, Me.printPreviewBarItem32, Me.printPreviewBarItem33, Me.printPreviewBarItem34, Me.printPreviewBarItem35, Me.printPreviewBarItem36, Me.printPreviewBarItem37, Me.printPreviewBarItem38, Me.printPreviewBarItem39, Me.printPreviewBarItem40, Me.printPreviewBarItem41, Me.printPreviewBarItem42, Me.printPreviewBarItem43, Me.printPreviewBarItem44, Me.printPreviewBarItem45, Me.printPreviewBarItem46, Me.printPreviewBarItem47, Me.printPreviewBarItem48, Me.printPreviewStaticItem1, Me.barStaticItem1, Me.progressBarEditItem1, Me.printPreviewBarItem49, Me.barButtonItem1, Me.printPreviewStaticItem2, Me.zoomTrackBarEditItem1})
+            Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
+            Me.ribbonControl1.Margin = New System.Windows.Forms.Padding(4)
             Me.ribbonControl1.MaxItemId = 56
             Me.ribbonControl1.Name = "ribbonControl1"
+            Me.ribbonControl1.OptionsMenuMinWidth = 385
             Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1})
             Me.ribbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.repositoryItemProgressBar1, Me.repositoryItemZoomTrackBar1})
-            Me.ribbonControl1.Size = New System.Drawing.Size(921, 141)
+            Me.ribbonControl1.Size = New System.Drawing.Size(1541, 193)
             Me.ribbonControl1.StatusBar = Me.ribbonStatusBar1
-            Me.ribbonControl1.TransparentEditors = True
+            Me.ribbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.[True]
             ' 
             ' printPreviewBarItem1
             ' 
@@ -297,9 +310,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem1.Command = DevExpress.XtraPrinting.PrintingSystemCommand.DocumentMap
             Me.printPreviewBarItem1.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem1.Enabled = False
-            Me.printPreviewBarItem1.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_DocumentMap
             Me.printPreviewBarItem1.Id = 1
-            Me.printPreviewBarItem1.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_DocumentMapLarge
+            Me.printPreviewBarItem1.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_DocumentMap
+            Me.printPreviewBarItem1.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_DocumentMapLarge
             Me.printPreviewBarItem1.Name = "printPreviewBarItem1"
             superToolTip1.FixedTooltipWidth = True
             toolTipTitleItem1.Text = "Document Map"
@@ -317,9 +330,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem2.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Parameters
             Me.printPreviewBarItem2.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem2.Enabled = False
-            Me.printPreviewBarItem2.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Parameters
             Me.printPreviewBarItem2.Id = 2
-            Me.printPreviewBarItem2.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ParametersLarge
+            Me.printPreviewBarItem2.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Parameters
+            Me.printPreviewBarItem2.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ParametersLarge
             Me.printPreviewBarItem2.Name = "printPreviewBarItem2"
             superToolTip2.FixedTooltipWidth = True
             toolTipTitleItem2.Text = "Parameters"
@@ -337,9 +350,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem3.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Find
             Me.printPreviewBarItem3.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem3.Enabled = False
-            Me.printPreviewBarItem3.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Find
             Me.printPreviewBarItem3.Id = 3
-            Me.printPreviewBarItem3.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_FindLarge
+            Me.printPreviewBarItem3.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Find
+            Me.printPreviewBarItem3.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_FindLarge
             Me.printPreviewBarItem3.Name = "printPreviewBarItem3"
             superToolTip3.FixedTooltipWidth = True
             toolTipTitleItem3.Text = "Find"
@@ -357,9 +370,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem4.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Thumbnails
             Me.printPreviewBarItem4.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem4.Enabled = False
-            Me.printPreviewBarItem4.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Thumbnails
             Me.printPreviewBarItem4.Id = 4
-            Me.printPreviewBarItem4.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ThumbnailsLarge
+            Me.printPreviewBarItem4.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Thumbnails
+            Me.printPreviewBarItem4.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ThumbnailsLarge
             Me.printPreviewBarItem4.Name = "printPreviewBarItem4"
             superToolTip4.FixedTooltipWidth = True
             toolTipTitleItem4.Text = "Thumbnails"
@@ -376,9 +389,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem5.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Customize
             Me.printPreviewBarItem5.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem5.Enabled = False
-            Me.printPreviewBarItem5.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Customize
             Me.printPreviewBarItem5.Id = 5
-            Me.printPreviewBarItem5.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_CustomizeLarge
+            Me.printPreviewBarItem5.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Customize
+            Me.printPreviewBarItem5.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_CustomizeLarge
             Me.printPreviewBarItem5.Name = "printPreviewBarItem5"
             superToolTip5.FixedTooltipWidth = True
             toolTipTitleItem5.Text = "Options"
@@ -395,9 +408,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem6.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Print
             Me.printPreviewBarItem6.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem6.Enabled = False
-            Me.printPreviewBarItem6.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Print
             Me.printPreviewBarItem6.Id = 6
-            Me.printPreviewBarItem6.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PrintLarge
+            Me.printPreviewBarItem6.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Print
+            Me.printPreviewBarItem6.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PrintLarge
             Me.printPreviewBarItem6.Name = "printPreviewBarItem6"
             superToolTip6.FixedTooltipWidth = True
             toolTipTitleItem6.Text = "Print (Ctrl+P)"
@@ -414,9 +427,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem7.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PrintDirect
             Me.printPreviewBarItem7.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem7.Enabled = False
-            Me.printPreviewBarItem7.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirect
             Me.printPreviewBarItem7.Id = 7
-            Me.printPreviewBarItem7.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirectLarge
+            Me.printPreviewBarItem7.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirect
+            Me.printPreviewBarItem7.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirectLarge
             Me.printPreviewBarItem7.Name = "printPreviewBarItem7"
             superToolTip7.FixedTooltipWidth = True
             toolTipTitleItem7.Text = "Quick Print"
@@ -450,9 +463,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem9.Command = DevExpress.XtraPrinting.PrintingSystemCommand.EditPageHF
             Me.printPreviewBarItem9.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem9.Enabled = False
-            Me.printPreviewBarItem9.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_EditPageHF
             Me.printPreviewBarItem9.Id = 9
-            Me.printPreviewBarItem9.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_EditPageHFLarge
+            Me.printPreviewBarItem9.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_EditPageHF
+            Me.printPreviewBarItem9.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_EditPageHFLarge
             Me.printPreviewBarItem9.Name = "printPreviewBarItem9"
             superToolTip9.FixedTooltipWidth = True
             toolTipTitleItem9.Text = "Header and Footer"
@@ -470,9 +483,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem10.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Scale
             Me.printPreviewBarItem10.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem10.Enabled = False
-            Me.printPreviewBarItem10.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Scale
             Me.printPreviewBarItem10.Id = 10
-            Me.printPreviewBarItem10.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ScaleLarge
+            Me.printPreviewBarItem10.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Scale
+            Me.printPreviewBarItem10.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ScaleLarge
             Me.printPreviewBarItem10.Name = "printPreviewBarItem10"
             superToolTip10.FixedTooltipWidth = True
             toolTipTitleItem10.Text = "Scale"
@@ -491,9 +504,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem11.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem11.Down = True
             Me.printPreviewBarItem11.Enabled = False
-            Me.printPreviewBarItem11.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Pointer
             Me.printPreviewBarItem11.GroupIndex = 1
             Me.printPreviewBarItem11.Id = 11
+            Me.printPreviewBarItem11.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Pointer
             Me.printPreviewBarItem11.Name = "printPreviewBarItem11"
             Me.printPreviewBarItem11.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
             superToolTip11.FixedTooltipWidth = True
@@ -512,9 +525,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem12.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HandTool
             Me.printPreviewBarItem12.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem12.Enabled = False
-            Me.printPreviewBarItem12.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_HandTool
             Me.printPreviewBarItem12.GroupIndex = 1
             Me.printPreviewBarItem12.Id = 12
+            Me.printPreviewBarItem12.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_HandTool
             Me.printPreviewBarItem12.Name = "printPreviewBarItem12"
             Me.printPreviewBarItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
             superToolTip12.FixedTooltipWidth = True
@@ -533,9 +546,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem13.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Magnifier
             Me.printPreviewBarItem13.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem13.Enabled = False
-            Me.printPreviewBarItem13.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Magnifier
             Me.printPreviewBarItem13.GroupIndex = 1
             Me.printPreviewBarItem13.Id = 13
+            Me.printPreviewBarItem13.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Magnifier
             Me.printPreviewBarItem13.Name = "printPreviewBarItem13"
             Me.printPreviewBarItem13.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
             superToolTip13.FixedTooltipWidth = True
@@ -553,9 +566,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem14.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomOut
             Me.printPreviewBarItem14.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem14.Enabled = False
-            Me.printPreviewBarItem14.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomOut
             Me.printPreviewBarItem14.Id = 14
-            Me.printPreviewBarItem14.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomOutLarge
+            Me.printPreviewBarItem14.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomOut
+            Me.printPreviewBarItem14.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomOutLarge
             Me.printPreviewBarItem14.Name = "printPreviewBarItem14"
             superToolTip14.FixedTooltipWidth = True
             toolTipTitleItem14.Text = "Zoom Out"
@@ -572,9 +585,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem15.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomIn
             Me.printPreviewBarItem15.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem15.Enabled = False
-            Me.printPreviewBarItem15.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomIn
             Me.printPreviewBarItem15.Id = 15
-            Me.printPreviewBarItem15.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomInLarge
+            Me.printPreviewBarItem15.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomIn
+            Me.printPreviewBarItem15.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomInLarge
             Me.printPreviewBarItem15.Name = "printPreviewBarItem15"
             superToolTip15.FixedTooltipWidth = True
             toolTipTitleItem15.Text = "Zoom In"
@@ -592,9 +605,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem16.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Zoom
             Me.printPreviewBarItem16.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem16.Enabled = False
-            Me.printPreviewBarItem16.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Zoom
             Me.printPreviewBarItem16.Id = 16
-            Me.printPreviewBarItem16.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomLarge
+            Me.printPreviewBarItem16.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Zoom
+            Me.printPreviewBarItem16.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ZoomLarge
             Me.printPreviewBarItem16.Name = "printPreviewBarItem16"
             superToolTip16.FixedTooltipWidth = True
             toolTipTitleItem16.Text = "Zoom"
@@ -611,9 +624,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem17.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowFirstPage
             Me.printPreviewBarItem17.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem17.Enabled = False
-            Me.printPreviewBarItem17.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowFirstPage
             Me.printPreviewBarItem17.Id = 17
-            Me.printPreviewBarItem17.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowFirstPageLarge
+            Me.printPreviewBarItem17.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowFirstPage
+            Me.printPreviewBarItem17.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowFirstPageLarge
             Me.printPreviewBarItem17.Name = "printPreviewBarItem17"
             superToolTip17.FixedTooltipWidth = True
             toolTipTitleItem17.Text = "First Page (Ctrl+Home)"
@@ -630,9 +643,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem18.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowPrevPage
             Me.printPreviewBarItem18.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem18.Enabled = False
-            Me.printPreviewBarItem18.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowPrevPage
             Me.printPreviewBarItem18.Id = 18
-            Me.printPreviewBarItem18.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowPrevPageLarge
+            Me.printPreviewBarItem18.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowPrevPage
+            Me.printPreviewBarItem18.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowPrevPageLarge
             Me.printPreviewBarItem18.Name = "printPreviewBarItem18"
             superToolTip18.FixedTooltipWidth = True
             toolTipTitleItem18.Text = "Previous Page (PageUp)"
@@ -649,9 +662,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem19.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowNextPage
             Me.printPreviewBarItem19.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem19.Enabled = False
-            Me.printPreviewBarItem19.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowNextPage
             Me.printPreviewBarItem19.Id = 19
-            Me.printPreviewBarItem19.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowNextPageLarge
+            Me.printPreviewBarItem19.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowNextPage
+            Me.printPreviewBarItem19.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowNextPageLarge
             Me.printPreviewBarItem19.Name = "printPreviewBarItem19"
             superToolTip19.FixedTooltipWidth = True
             toolTipTitleItem19.Text = "Next Page (PageDown)"
@@ -668,9 +681,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem20.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowLastPage
             Me.printPreviewBarItem20.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem20.Enabled = False
-            Me.printPreviewBarItem20.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowLastPage
             Me.printPreviewBarItem20.Id = 20
-            Me.printPreviewBarItem20.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowLastPageLarge
+            Me.printPreviewBarItem20.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowLastPage
+            Me.printPreviewBarItem20.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ShowLastPageLarge
             Me.printPreviewBarItem20.Name = "printPreviewBarItem20"
             superToolTip20.FixedTooltipWidth = True
             toolTipTitleItem20.Text = "Last Page (Ctrl+End)"
@@ -688,9 +701,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem21.Command = DevExpress.XtraPrinting.PrintingSystemCommand.MultiplePages
             Me.printPreviewBarItem21.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem21.Enabled = False
-            Me.printPreviewBarItem21.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_MultiplePages
             Me.printPreviewBarItem21.Id = 21
-            Me.printPreviewBarItem21.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_MultiplePagesLarge
+            Me.printPreviewBarItem21.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_MultiplePages
+            Me.printPreviewBarItem21.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_MultiplePagesLarge
             Me.printPreviewBarItem21.Name = "printPreviewBarItem21"
             superToolTip21.FixedTooltipWidth = True
             toolTipTitleItem21.Text = "View Many Pages"
@@ -708,9 +721,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem22.Command = DevExpress.XtraPrinting.PrintingSystemCommand.FillBackground
             Me.printPreviewBarItem22.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem22.Enabled = False
-            Me.printPreviewBarItem22.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_FillBackground
             Me.printPreviewBarItem22.Id = 22
-            Me.printPreviewBarItem22.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_FillBackgroundLarge
+            Me.printPreviewBarItem22.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_FillBackground
+            Me.printPreviewBarItem22.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_FillBackgroundLarge
             Me.printPreviewBarItem22.Name = "printPreviewBarItem22"
             superToolTip22.FixedTooltipWidth = True
             toolTipTitleItem22.Text = "Background Color"
@@ -727,9 +740,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem23.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Watermark
             Me.printPreviewBarItem23.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem23.Enabled = False
-            Me.printPreviewBarItem23.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Watermark
             Me.printPreviewBarItem23.Id = 23
-            Me.printPreviewBarItem23.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_WatermarkLarge
+            Me.printPreviewBarItem23.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Watermark
+            Me.printPreviewBarItem23.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_WatermarkLarge
             Me.printPreviewBarItem23.Name = "printPreviewBarItem23"
             superToolTip23.FixedTooltipWidth = True
             toolTipTitleItem23.Text = "Watermark"
@@ -747,9 +760,7 @@ Namespace TreeViewReport
             Me.printPreviewBarItem24.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportFile
             Me.printPreviewBarItem24.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem24.Enabled = False
-            Me.printPreviewBarItem24.Glyph = CType((resources.GetObject("printPreviewBarItem24.Glyph")), System.Drawing.Image)
             Me.printPreviewBarItem24.Id = 24
-            Me.printPreviewBarItem24.LargeGlyph = CType((resources.GetObject("printPreviewBarItem24.LargeGlyph")), System.Drawing.Image)
             Me.printPreviewBarItem24.Name = "printPreviewBarItem24"
             superToolTip24.FixedTooltipWidth = True
             toolTipTitleItem24.Text = "Export To..."
@@ -767,9 +778,7 @@ Namespace TreeViewReport
             Me.printPreviewBarItem25.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendFile
             Me.printPreviewBarItem25.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem25.Enabled = False
-            Me.printPreviewBarItem25.Glyph = CType((resources.GetObject("printPreviewBarItem25.Glyph")), System.Drawing.Image)
             Me.printPreviewBarItem25.Id = 25
-            Me.printPreviewBarItem25.LargeGlyph = CType((resources.GetObject("printPreviewBarItem25.LargeGlyph")), System.Drawing.Image)
             Me.printPreviewBarItem25.Name = "printPreviewBarItem25"
             superToolTip25.FixedTooltipWidth = True
             toolTipTitleItem25.Text = "E-Mail As..."
@@ -786,9 +795,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem26.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ClosePreview
             Me.printPreviewBarItem26.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem26.Enabled = False
-            Me.printPreviewBarItem26.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreview
             Me.printPreviewBarItem26.Id = 26
-            Me.printPreviewBarItem26.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreviewLarge
+            Me.printPreviewBarItem26.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreview
+            Me.printPreviewBarItem26.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreviewLarge
             Me.printPreviewBarItem26.Name = "printPreviewBarItem26"
             superToolTip26.FixedTooltipWidth = True
             toolTipTitleItem26.Text = "Close Print Preview"
@@ -806,9 +815,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem27.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageOrientation
             Me.printPreviewBarItem27.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem27.Enabled = False
-            Me.printPreviewBarItem27.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientation
             Me.printPreviewBarItem27.Id = 27
-            Me.printPreviewBarItem27.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientationLarge
+            Me.printPreviewBarItem27.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientation
+            Me.printPreviewBarItem27.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageOrientationLarge
             Me.printPreviewBarItem27.Name = "printPreviewBarItem27"
             superToolTip27.FixedTooltipWidth = True
             toolTipTitleItem27.Text = "Page Orientation"
@@ -826,9 +835,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem28.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PaperSize
             Me.printPreviewBarItem28.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem28.Enabled = False
-            Me.printPreviewBarItem28.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PaperSize
             Me.printPreviewBarItem28.Id = 28
-            Me.printPreviewBarItem28.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PaperSizeLarge
+            Me.printPreviewBarItem28.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PaperSize
+            Me.printPreviewBarItem28.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PaperSizeLarge
             Me.printPreviewBarItem28.Name = "printPreviewBarItem28"
             superToolTip28.FixedTooltipWidth = True
             toolTipTitleItem28.Text = "Page Size"
@@ -846,9 +855,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem29.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageMargins
             Me.printPreviewBarItem29.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem29.Enabled = False
-            Me.printPreviewBarItem29.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageMargins
             Me.printPreviewBarItem29.Id = 29
-            Me.printPreviewBarItem29.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsLarge
+            Me.printPreviewBarItem29.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageMargins
+            Me.printPreviewBarItem29.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageMarginsLarge
             Me.printPreviewBarItem29.Name = "printPreviewBarItem29"
             superToolTip29.FixedTooltipWidth = True
             toolTipTitleItem29.Text = "Page Margins"
@@ -866,9 +875,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem30.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem30.Description = "Adobe Portable Document Format"
             Me.printPreviewBarItem30.Enabled = False
-            Me.printPreviewBarItem30.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendPdf
             Me.printPreviewBarItem30.Id = 30
-            Me.printPreviewBarItem30.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendPdfLarge
+            Me.printPreviewBarItem30.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendPdf
+            Me.printPreviewBarItem30.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendPdfLarge
             Me.printPreviewBarItem30.Name = "printPreviewBarItem30"
             superToolTip30.FixedTooltipWidth = True
             toolTipTitleItem30.Text = "E-Mail As PDF"
@@ -886,9 +895,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem31.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem31.Description = "Plain Text"
             Me.printPreviewBarItem31.Enabled = False
-            Me.printPreviewBarItem31.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendTxt
             Me.printPreviewBarItem31.Id = 31
-            Me.printPreviewBarItem31.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendTxtLarge
+            Me.printPreviewBarItem31.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendTxt
+            Me.printPreviewBarItem31.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendTxtLarge
             Me.printPreviewBarItem31.Name = "printPreviewBarItem31"
             superToolTip31.FixedTooltipWidth = True
             toolTipTitleItem31.Text = "E-Mail As Text"
@@ -906,9 +915,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem32.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem32.Description = "Comma-Separated Values Text"
             Me.printPreviewBarItem32.Enabled = False
-            Me.printPreviewBarItem32.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendCsv
             Me.printPreviewBarItem32.Id = 32
-            Me.printPreviewBarItem32.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendCsvLarge
+            Me.printPreviewBarItem32.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendCsv
+            Me.printPreviewBarItem32.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendCsvLarge
             Me.printPreviewBarItem32.Name = "printPreviewBarItem32"
             superToolTip32.FixedTooltipWidth = True
             toolTipTitleItem32.Text = "E-Mail As CSV"
@@ -926,9 +935,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem33.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem33.Description = "Single File Web Page"
             Me.printPreviewBarItem33.Enabled = False
-            Me.printPreviewBarItem33.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendMht
             Me.printPreviewBarItem33.Id = 33
-            Me.printPreviewBarItem33.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendMhtLarge
+            Me.printPreviewBarItem33.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendMht
+            Me.printPreviewBarItem33.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendMhtLarge
             Me.printPreviewBarItem33.Name = "printPreviewBarItem33"
             superToolTip33.FixedTooltipWidth = True
             toolTipTitleItem33.Text = "E-Mail As MHT"
@@ -946,9 +955,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem34.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem34.Description = "Microsoft Excel 2000-2003 Workbook"
             Me.printPreviewBarItem34.Enabled = False
-            Me.printPreviewBarItem34.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendXls
             Me.printPreviewBarItem34.Id = 34
-            Me.printPreviewBarItem34.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsLarge
+            Me.printPreviewBarItem34.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendXls
+            Me.printPreviewBarItem34.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsLarge
             Me.printPreviewBarItem34.Name = "printPreviewBarItem34"
             superToolTip34.FixedTooltipWidth = True
             toolTipTitleItem34.Text = "E-Mail As XLS"
@@ -966,9 +975,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem35.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem35.Description = "Microsoft Excel 2007 Workbook"
             Me.printPreviewBarItem35.Enabled = False
-            Me.printPreviewBarItem35.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsx
             Me.printPreviewBarItem35.Id = 35
-            Me.printPreviewBarItem35.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsxLarge
+            Me.printPreviewBarItem35.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsx
+            Me.printPreviewBarItem35.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendXlsxLarge
             Me.printPreviewBarItem35.Name = "printPreviewBarItem35"
             superToolTip35.FixedTooltipWidth = True
             toolTipTitleItem35.Text = "E-Mail As XLSX"
@@ -986,9 +995,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem36.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem36.Description = "Rich Text Format"
             Me.printPreviewBarItem36.Enabled = False
-            Me.printPreviewBarItem36.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendRtf
             Me.printPreviewBarItem36.Id = 36
-            Me.printPreviewBarItem36.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendRtfLarge
+            Me.printPreviewBarItem36.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendRtf
+            Me.printPreviewBarItem36.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendRtfLarge
             Me.printPreviewBarItem36.Name = "printPreviewBarItem36"
             superToolTip36.FixedTooltipWidth = True
             toolTipTitleItem36.Text = "E-Mail As RTF"
@@ -1006,9 +1015,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem37.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem37.Description = "BMP, GIF, JPEG, PNG, TIFF, EMF, WMF"
             Me.printPreviewBarItem37.Enabled = False
-            Me.printPreviewBarItem37.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendGraphic
             Me.printPreviewBarItem37.Id = 37
-            Me.printPreviewBarItem37.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendGraphicLarge
+            Me.printPreviewBarItem37.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendGraphic
+            Me.printPreviewBarItem37.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SendGraphicLarge
             Me.printPreviewBarItem37.Name = "printPreviewBarItem37"
             superToolTip37.FixedTooltipWidth = True
             toolTipTitleItem37.Text = "E-Mail As Image"
@@ -1026,9 +1035,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem38.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem38.Description = "Adobe Portable Document Format"
             Me.printPreviewBarItem38.Enabled = False
-            Me.printPreviewBarItem38.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportPdf
             Me.printPreviewBarItem38.Id = 38
-            Me.printPreviewBarItem38.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportPdfLarge
+            Me.printPreviewBarItem38.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportPdf
+            Me.printPreviewBarItem38.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportPdfLarge
             Me.printPreviewBarItem38.Name = "printPreviewBarItem38"
             superToolTip38.FixedTooltipWidth = True
             toolTipTitleItem38.Text = "Export to PDF"
@@ -1046,9 +1055,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem39.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem39.Description = "Web Page"
             Me.printPreviewBarItem39.Enabled = False
-            Me.printPreviewBarItem39.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportHtm
             Me.printPreviewBarItem39.Id = 39
-            Me.printPreviewBarItem39.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportHtmLarge
+            Me.printPreviewBarItem39.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportHtm
+            Me.printPreviewBarItem39.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportHtmLarge
             Me.printPreviewBarItem39.Name = "printPreviewBarItem39"
             superToolTip39.FixedTooltipWidth = True
             toolTipTitleItem39.Text = "Export to HTML"
@@ -1066,9 +1075,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem40.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem40.Description = "Plain Text"
             Me.printPreviewBarItem40.Enabled = False
-            Me.printPreviewBarItem40.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportTxt
             Me.printPreviewBarItem40.Id = 40
-            Me.printPreviewBarItem40.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportTxtLarge
+            Me.printPreviewBarItem40.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportTxt
+            Me.printPreviewBarItem40.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportTxtLarge
             Me.printPreviewBarItem40.Name = "printPreviewBarItem40"
             superToolTip40.FixedTooltipWidth = True
             toolTipTitleItem40.Text = "Export to Text"
@@ -1086,9 +1095,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem41.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem41.Description = "Comma-Separated Values Text"
             Me.printPreviewBarItem41.Enabled = False
-            Me.printPreviewBarItem41.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportCsv
             Me.printPreviewBarItem41.Id = 41
-            Me.printPreviewBarItem41.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportCsvLarge
+            Me.printPreviewBarItem41.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportCsv
+            Me.printPreviewBarItem41.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportCsvLarge
             Me.printPreviewBarItem41.Name = "printPreviewBarItem41"
             superToolTip41.FixedTooltipWidth = True
             toolTipTitleItem41.Text = "Export to CSV"
@@ -1106,9 +1115,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem42.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem42.Description = "Single File Web Page"
             Me.printPreviewBarItem42.Enabled = False
-            Me.printPreviewBarItem42.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportMht
             Me.printPreviewBarItem42.Id = 42
-            Me.printPreviewBarItem42.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportMhtLarge
+            Me.printPreviewBarItem42.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportMht
+            Me.printPreviewBarItem42.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportMhtLarge
             Me.printPreviewBarItem42.Name = "printPreviewBarItem42"
             superToolTip42.FixedTooltipWidth = True
             toolTipTitleItem42.Text = "Export to MHT"
@@ -1126,9 +1135,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem43.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem43.Description = "Microsoft Excel 2000-2003 Workbook"
             Me.printPreviewBarItem43.Enabled = False
-            Me.printPreviewBarItem43.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportXls
             Me.printPreviewBarItem43.Id = 43
-            Me.printPreviewBarItem43.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsLarge
+            Me.printPreviewBarItem43.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportXls
+            Me.printPreviewBarItem43.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsLarge
             Me.printPreviewBarItem43.Name = "printPreviewBarItem43"
             superToolTip43.FixedTooltipWidth = True
             toolTipTitleItem43.Text = "Export to XLS"
@@ -1146,9 +1155,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem44.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem44.Description = "Microsoft Excel 2007 Workbook"
             Me.printPreviewBarItem44.Enabled = False
-            Me.printPreviewBarItem44.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsx
             Me.printPreviewBarItem44.Id = 44
-            Me.printPreviewBarItem44.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsxLarge
+            Me.printPreviewBarItem44.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsx
+            Me.printPreviewBarItem44.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportXlsxLarge
             Me.printPreviewBarItem44.Name = "printPreviewBarItem44"
             superToolTip44.FixedTooltipWidth = True
             toolTipTitleItem44.Text = "Export to XLSX"
@@ -1166,9 +1175,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem45.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem45.Description = "Rich Text Format"
             Me.printPreviewBarItem45.Enabled = False
-            Me.printPreviewBarItem45.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportRtf
             Me.printPreviewBarItem45.Id = 45
-            Me.printPreviewBarItem45.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportRtfLarge
+            Me.printPreviewBarItem45.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportRtf
+            Me.printPreviewBarItem45.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportRtfLarge
             Me.printPreviewBarItem45.Name = "printPreviewBarItem45"
             superToolTip45.FixedTooltipWidth = True
             toolTipTitleItem45.Text = "Export to RTF"
@@ -1186,9 +1195,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem46.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem46.Description = "BMP, GIF, JPEG, PNG, TIFF, EMF, WMF"
             Me.printPreviewBarItem46.Enabled = False
-            Me.printPreviewBarItem46.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportGraphic
             Me.printPreviewBarItem46.Id = 46
-            Me.printPreviewBarItem46.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportGraphicLarge
+            Me.printPreviewBarItem46.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportGraphic
+            Me.printPreviewBarItem46.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportGraphicLarge
             Me.printPreviewBarItem46.Name = "printPreviewBarItem46"
             superToolTip46.FixedTooltipWidth = True
             toolTipTitleItem46.Text = "Export to Image"
@@ -1205,9 +1214,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem47.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Open
             Me.printPreviewBarItem47.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem47.Enabled = False
-            Me.printPreviewBarItem47.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Open
             Me.printPreviewBarItem47.Id = 47
-            Me.printPreviewBarItem47.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_OpenLarge
+            Me.printPreviewBarItem47.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Open
+            Me.printPreviewBarItem47.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_OpenLarge
             Me.printPreviewBarItem47.Name = "printPreviewBarItem47"
             superToolTip47.FixedTooltipWidth = True
             toolTipTitleItem47.Text = "Open (Ctrl + O)"
@@ -1224,9 +1233,9 @@ Namespace TreeViewReport
             Me.printPreviewBarItem48.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Save
             Me.printPreviewBarItem48.ContextSpecifier = Me.documentViewerRibbonController1
             Me.printPreviewBarItem48.Enabled = False
-            Me.printPreviewBarItem48.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Save
             Me.printPreviewBarItem48.Id = 48
-            Me.printPreviewBarItem48.LargeGlyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SaveLarge
+            Me.printPreviewBarItem48.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Save
+            Me.printPreviewBarItem48.ImageOptions.LargeImage = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_SaveLarge
             Me.printPreviewBarItem48.Name = "printPreviewBarItem48"
             superToolTip48.FixedTooltipWidth = True
             toolTipTitleItem48.Text = "Save (Ctrl + S)"
@@ -1244,14 +1253,12 @@ Namespace TreeViewReport
             Me.printPreviewStaticItem1.LeftIndent = 1
             Me.printPreviewStaticItem1.Name = "printPreviewStaticItem1"
             Me.printPreviewStaticItem1.RightIndent = 1
-            Me.printPreviewStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near
             Me.printPreviewStaticItem1.Type = "PageOfPages"
             ' 
             ' barStaticItem1
             ' 
             Me.barStaticItem1.Id = 50
             Me.barStaticItem1.Name = "barStaticItem1"
-            Me.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near
             Me.barStaticItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.OnlyInRuntime
             ' 
             ' progressBarEditItem1
@@ -1294,7 +1301,6 @@ Namespace TreeViewReport
             Me.printPreviewStaticItem2.Caption = "100%"
             Me.printPreviewStaticItem2.Id = 54
             Me.printPreviewStaticItem2.Name = "printPreviewStaticItem2"
-            Me.printPreviewStaticItem2.TextAlignment = System.Drawing.StringAlignment.Near
             Me.printPreviewStaticItem2.Type = "ZoomFactorText"
             ' 
             ' zoomTrackBarEditItem1
@@ -1316,7 +1322,6 @@ Namespace TreeViewReport
             Me.repositoryItemZoomTrackBar1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
             Me.repositoryItemZoomTrackBar1.Maximum = 180
             Me.repositoryItemZoomTrackBar1.Name = "repositoryItemZoomTrackBar1"
-            Me.repositoryItemZoomTrackBar1.ScrollThumbStyle = DevExpress.XtraEditors.Repository.ScrollThumbStyle.ArrowDownRight
             ' 
             ' ribbonPage1
             ' 
@@ -1328,34 +1333,34 @@ Namespace TreeViewReport
             ' printPreviewRibbonPageGroup1
             ' 
             Me.printPreviewRibbonPageGroup1.AllowTextClipping = False
+            Me.printPreviewRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup1.ContextSpecifier = Me.documentViewerRibbonController1
-            Me.printPreviewRibbonPageGroup1.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Document
+            Me.printPreviewRibbonPageGroup1.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Document
             Me.printPreviewRibbonPageGroup1.ItemLinks.Add(Me.printPreviewBarItem47)
             Me.printPreviewRibbonPageGroup1.ItemLinks.Add(Me.printPreviewBarItem48)
             Me.printPreviewRibbonPageGroup1.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Document
             Me.printPreviewRibbonPageGroup1.Name = "printPreviewRibbonPageGroup1"
-            Me.printPreviewRibbonPageGroup1.ShowCaptionButton = False
             Me.printPreviewRibbonPageGroup1.Text = "Document"
             ' 
             ' printPreviewRibbonPageGroup2
             ' 
             Me.printPreviewRibbonPageGroup2.AllowTextClipping = False
+            Me.printPreviewRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup2.ContextSpecifier = Me.documentViewerRibbonController1
-            Me.printPreviewRibbonPageGroup2.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirect
+            Me.printPreviewRibbonPageGroup2.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PrintDirect
             Me.printPreviewRibbonPageGroup2.ItemLinks.Add(Me.printPreviewBarItem6)
             Me.printPreviewRibbonPageGroup2.ItemLinks.Add(Me.printPreviewBarItem7)
             Me.printPreviewRibbonPageGroup2.ItemLinks.Add(Me.printPreviewBarItem5)
             Me.printPreviewRibbonPageGroup2.ItemLinks.Add(Me.printPreviewBarItem2)
             Me.printPreviewRibbonPageGroup2.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Print
             Me.printPreviewRibbonPageGroup2.Name = "printPreviewRibbonPageGroup2"
-            Me.printPreviewRibbonPageGroup2.ShowCaptionButton = False
             Me.printPreviewRibbonPageGroup2.Text = "Print"
             ' 
             ' printPreviewRibbonPageGroup3
             ' 
             Me.printPreviewRibbonPageGroup3.AllowTextClipping = False
             Me.printPreviewRibbonPageGroup3.ContextSpecifier = Me.documentViewerRibbonController1
-            Me.printPreviewRibbonPageGroup3.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageMargins
+            Me.printPreviewRibbonPageGroup3.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_PageMargins
             Me.printPreviewRibbonPageGroup3.ItemLinks.Add(Me.printPreviewBarItem9)
             Me.printPreviewRibbonPageGroup3.ItemLinks.Add(Me.printPreviewBarItem10)
             Me.printPreviewRibbonPageGroup3.ItemLinks.Add(Me.printPreviewBarItem29)
@@ -1376,8 +1381,9 @@ Namespace TreeViewReport
             ' printPreviewRibbonPageGroup4
             ' 
             Me.printPreviewRibbonPageGroup4.AllowTextClipping = False
+            Me.printPreviewRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup4.ContextSpecifier = Me.documentViewerRibbonController1
-            Me.printPreviewRibbonPageGroup4.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Find
+            Me.printPreviewRibbonPageGroup4.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Find
             Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem3)
             Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem4)
             Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem1)
@@ -1387,14 +1393,14 @@ Namespace TreeViewReport
             Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem20)
             Me.printPreviewRibbonPageGroup4.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Navigation
             Me.printPreviewRibbonPageGroup4.Name = "printPreviewRibbonPageGroup4"
-            Me.printPreviewRibbonPageGroup4.ShowCaptionButton = False
             Me.printPreviewRibbonPageGroup4.Text = "Navigation"
             ' 
             ' printPreviewRibbonPageGroup5
             ' 
             Me.printPreviewRibbonPageGroup5.AllowTextClipping = False
+            Me.printPreviewRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup5.ContextSpecifier = Me.documentViewerRibbonController1
-            Me.printPreviewRibbonPageGroup5.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Zoom
+            Me.printPreviewRibbonPageGroup5.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Zoom
             Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem11)
             Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem12)
             Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem13)
@@ -1404,42 +1410,41 @@ Namespace TreeViewReport
             Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem15)
             Me.printPreviewRibbonPageGroup5.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Zoom
             Me.printPreviewRibbonPageGroup5.Name = "printPreviewRibbonPageGroup5"
-            Me.printPreviewRibbonPageGroup5.ShowCaptionButton = False
             Me.printPreviewRibbonPageGroup5.Text = "Zoom"
             ' 
             ' printPreviewRibbonPageGroup6
             ' 
             Me.printPreviewRibbonPageGroup6.AllowTextClipping = False
+            Me.printPreviewRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup6.ContextSpecifier = Me.documentViewerRibbonController1
-            Me.printPreviewRibbonPageGroup6.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Watermark
+            Me.printPreviewRibbonPageGroup6.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_Watermark
             Me.printPreviewRibbonPageGroup6.ItemLinks.Add(Me.printPreviewBarItem22)
             Me.printPreviewRibbonPageGroup6.ItemLinks.Add(Me.printPreviewBarItem23)
             Me.printPreviewRibbonPageGroup6.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Background
             Me.printPreviewRibbonPageGroup6.Name = "printPreviewRibbonPageGroup6"
-            Me.printPreviewRibbonPageGroup6.ShowCaptionButton = False
             Me.printPreviewRibbonPageGroup6.Text = "Page Background"
             ' 
             ' printPreviewRibbonPageGroup7
             ' 
             Me.printPreviewRibbonPageGroup7.AllowTextClipping = False
+            Me.printPreviewRibbonPageGroup7.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup7.ContextSpecifier = Me.documentViewerRibbonController1
-            Me.printPreviewRibbonPageGroup7.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportFile
+            Me.printPreviewRibbonPageGroup7.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ExportFile
             Me.printPreviewRibbonPageGroup7.ItemLinks.Add(Me.printPreviewBarItem24)
             Me.printPreviewRibbonPageGroup7.ItemLinks.Add(Me.printPreviewBarItem25)
             Me.printPreviewRibbonPageGroup7.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Export
             Me.printPreviewRibbonPageGroup7.Name = "printPreviewRibbonPageGroup7"
-            Me.printPreviewRibbonPageGroup7.ShowCaptionButton = False
             Me.printPreviewRibbonPageGroup7.Text = "Export"
             ' 
             ' printPreviewRibbonPageGroup8
             ' 
             Me.printPreviewRibbonPageGroup8.AllowTextClipping = False
+            Me.printPreviewRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
             Me.printPreviewRibbonPageGroup8.ContextSpecifier = Me.documentViewerRibbonController1
-            Me.printPreviewRibbonPageGroup8.Glyph = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreview
+            Me.printPreviewRibbonPageGroup8.ImageOptions.Image = Global.TreeViewReport.PrintRibbonControllerResources.RibbonPrintPreview_ClosePreview
             Me.printPreviewRibbonPageGroup8.ItemLinks.Add(Me.printPreviewBarItem26)
             Me.printPreviewRibbonPageGroup8.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Close
             Me.printPreviewRibbonPageGroup8.Name = "printPreviewRibbonPageGroup8"
-            Me.printPreviewRibbonPageGroup8.ShowCaptionButton = False
             Me.printPreviewRibbonPageGroup8.Text = "Close"
             ' 
             ' ribbonStatusBar1
@@ -1451,27 +1456,75 @@ Namespace TreeViewReport
             Me.ribbonStatusBar1.ItemLinks.Add(Me.barButtonItem1)
             Me.ribbonStatusBar1.ItemLinks.Add(Me.printPreviewStaticItem2)
             Me.ribbonStatusBar1.ItemLinks.Add(Me.zoomTrackBarEditItem1)
-            Me.ribbonStatusBar1.Location = New System.Drawing.Point(400, 599)
+            Me.ribbonStatusBar1.Location = New System.Drawing.Point(0, 740)
+            Me.ribbonStatusBar1.Margin = New System.Windows.Forms.Padding(4)
             Me.ribbonStatusBar1.Name = "ribbonStatusBar1"
             Me.ribbonStatusBar1.Ribbon = Me.ribbonControl1
-            Me.ribbonStatusBar1.Size = New System.Drawing.Size(921, 27)
+            Me.ribbonStatusBar1.Size = New System.Drawing.Size(1541, 30)
+            ' 
+            ' Form1layoutControl1ConvertedLayout
+            ' 
+            Me.Form1layoutControl1ConvertedLayout.Controls.Add(Me.documentViewer1)
+            Me.Form1layoutControl1ConvertedLayout.Controls.Add(Me.treeList1)
+            Me.Form1layoutControl1ConvertedLayout.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.Form1layoutControl1ConvertedLayout.Location = New System.Drawing.Point(0, 193)
+            Me.Form1layoutControl1ConvertedLayout.Name = "Form1layoutControl1ConvertedLayout"
+            Me.Form1layoutControl1ConvertedLayout.Root = Me.layoutControlGroup1
+            Me.Form1layoutControl1ConvertedLayout.Size = New System.Drawing.Size(1541, 577)
+            Me.Form1layoutControl1ConvertedLayout.TabIndex = 4
+            ' 
+            ' layoutControlGroup1
+            ' 
+            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
+            Me.layoutControlGroup1.GroupBordersVisible = False
+            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.PrintControlitem, Me.treeList1item})
+            Me.layoutControlGroup1.Name = "layoutControlGroup1"
+            Me.layoutControlGroup1.Size = New System.Drawing.Size(1541, 577)
+            Me.layoutControlGroup1.TextVisible = False
+            ' 
+            ' PrintControlitem
+            ' 
+            Me.PrintControlitem.Control = Me.documentViewer1
+            Me.PrintControlitem.Location = New System.Drawing.Point(461, 0)
+            Me.PrintControlitem.Name = "PrintControlitem"
+            Me.PrintControlitem.Size = New System.Drawing.Size(1060, 557)
+            Me.PrintControlitem.TextSize = New System.Drawing.Size(0, 0)
+            Me.PrintControlitem.TextVisible = False
+            ' 
+            ' treeList1item
+            ' 
+            Me.treeList1item.Control = Me.treeList1
+            Me.treeList1item.Location = New System.Drawing.Point(0, 0)
+            Me.treeList1item.Name = "treeList1item"
+            Me.treeList1item.Size = New System.Drawing.Size(461, 557)
+            Me.treeList1item.TextSize = New System.Drawing.Size(0, 0)
+            Me.treeList1item.TextVisible = False
             ' 
             ' Form1
             ' 
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+            Me.AllowFormGlass = DevExpress.Utils.DefaultBoolean.[False]
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(7F, 16F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1321, 626)
-            Me.Controls.Add(Me.documentViewer1)
+            Me.ClientSize = New System.Drawing.Size(1541, 770)
             Me.Controls.Add(Me.ribbonStatusBar1)
+            Me.Controls.Add(Me.Form1layoutControl1ConvertedLayout)
             Me.Controls.Add(Me.ribbonControl1)
-            Me.Controls.Add(Me.treeList1)
+            Me.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "Form1"
+            Me.Ribbon = Me.ribbonControl1
+            Me.StatusBar = Me.ribbonStatusBar1
             Me.Text = "Form1"
             CType((Me.treeList1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.documentViewerRibbonController1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.repositoryItemProgressBar1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.repositoryItemZoomTrackBar1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.Form1layoutControl1ConvertedLayout), System.ComponentModel.ISupportInitialize).EndInit()
+            Me.Form1layoutControl1ConvertedLayout.ResumeLayout(False)
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.PrintControlitem), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.treeList1item), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
         End Sub
@@ -1618,5 +1671,13 @@ Namespace TreeViewReport
         Private ribbonStatusBar1 As DevExpress.XtraBars.Ribbon.RibbonStatusBar
 
         Public treeList1 As DevExpress.XtraTreeList.TreeList
+
+        Private Form1layoutControl1ConvertedLayout As DevExpress.XtraLayout.LayoutControl
+
+        Private layoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
+
+        Private PrintControlitem As DevExpress.XtraLayout.LayoutControlItem
+
+        Private treeList1item As DevExpress.XtraLayout.LayoutControlItem
     End Class
 End Namespace

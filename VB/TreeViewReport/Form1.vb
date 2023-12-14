@@ -1,10 +1,7 @@
-Imports System.ComponentModel
-Imports System.Drawing
-
 Namespace TreeViewReport
 
     Public Partial Class Form1
-        Inherits DevExpress.XtraEditors.XtraForm
+        Inherits DevExpress.XtraBars.Ribbon.RibbonForm
 
         Private report As TreeReport
 

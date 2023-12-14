@@ -50,7 +50,6 @@ Namespace TreeViewReport
             ' Detail
             ' 
             Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrTable1})
-            Me.Detail.Dpi = 100F
             Me.Detail.HeightF = 25F
             Me.Detail.Name = "Detail"
             Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -66,7 +65,6 @@ Namespace TreeViewReport
             Me.xrTable1.BackColor = System.Drawing.Color.DarkKhaki
             Me.xrTable1.Borders = CType(((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) Or DevExpress.XtraPrinting.BorderSide.Right) Or DevExpress.XtraPrinting.BorderSide.Bottom)), DevExpress.XtraPrinting.BorderSide)
             Me.xrTable1.CanPublish = False
-            Me.xrTable1.Dpi = 100F
             Me.xrTable1.KeepTogether = True
             Me.xrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
             Me.xrTable1.Name = "xrTable1"
@@ -78,16 +76,16 @@ Namespace TreeViewReport
             ' xrTableRow3
             ' 
             Me.xrTableRow3.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell7, Me.xrTableCell8, Me.xrTableCell9, Me.xrTableCell10})
-            Me.xrTableRow3.Dpi = 100F
             Me.xrTableRow3.Name = "xrTableRow3"
             Me.xrTableRow3.Weight = 11.5R
             ' 
             ' xrTableCell7
             ' 
+            Me.xrTableCell7.BackColor = System.Drawing.Color.LightGray
             Me.xrTableCell7.CanPublish = False
-            Me.xrTableCell7.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NodeKey")})
-            Me.xrTableCell7.Dpi = 100F
+            Me.xrTableCell7.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[NodeKey]")})
             Me.xrTableCell7.Name = "xrTableCell7"
+            Me.xrTableCell7.StylePriority.UseBackColor = False
             Me.xrTableCell7.StylePriority.UseTextAlignment = False
             Me.xrTableCell7.Text = "xrTableCell7"
             Me.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
@@ -95,10 +93,11 @@ Namespace TreeViewReport
             ' 
             ' xrTableCell8
             ' 
+            Me.xrTableCell8.BackColor = System.Drawing.Color.LightGray
             Me.xrTableCell8.CanPublish = False
-            Me.xrTableCell8.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "ParentNodeKey")})
-            Me.xrTableCell8.Dpi = 100F
+            Me.xrTableCell8.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ParentNodeKey]")})
             Me.xrTableCell8.Name = "xrTableCell8"
+            Me.xrTableCell8.StylePriority.UseBackColor = False
             Me.xrTableCell8.StylePriority.UseTextAlignment = False
             Me.xrTableCell8.Text = "xrTableCell8"
             Me.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight
@@ -106,10 +105,11 @@ Namespace TreeViewReport
             ' 
             ' xrTableCell9
             ' 
+            Me.xrTableCell9.BackColor = System.Drawing.Color.LightGray
             Me.xrTableCell9.CanPublish = False
-            Me.xrTableCell9.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NodeName")})
-            Me.xrTableCell9.Dpi = 100F
+            Me.xrTableCell9.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[NodeName]")})
             Me.xrTableCell9.Name = "xrTableCell9"
+            Me.xrTableCell9.StylePriority.UseBackColor = False
             Me.xrTableCell9.StylePriority.UseTextAlignment = False
             Me.xrTableCell9.Text = "xrTableCell9"
             Me.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
@@ -117,10 +117,11 @@ Namespace TreeViewReport
             ' 
             ' xrTableCell10
             ' 
+            Me.xrTableCell10.BackColor = System.Drawing.Color.LightGray
             Me.xrTableCell10.CanShrink = True
-            Me.xrTableCell10.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NodeDescription")})
-            Me.xrTableCell10.Dpi = 100F
+            Me.xrTableCell10.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[NodeDescription]")})
             Me.xrTableCell10.Name = "xrTableCell10"
+            Me.xrTableCell10.StylePriority.UseBackColor = False
             Me.xrTableCell10.StylePriority.UseTextAlignment = False
             Me.xrTableCell10.Text = "xrTableCell10"
             Me.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
@@ -129,14 +130,12 @@ Namespace TreeViewReport
             ' SubBand1
             ' 
             Me.SubBand1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrSubreport1})
-            Me.SubBand1.Dpi = 100F
             Me.SubBand1.HeightF = 20F
             Me.SubBand1.Name = "SubBand1"
             ' 
             ' xrSubreport1
             ' 
             Me.xrSubreport1.CanShrink = True
-            Me.xrSubreport1.Dpi = 100F
             Me.xrSubreport1.LocationFloat = New DevExpress.Utils.PointFloat(20F, 0F)
             Me.xrSubreport1.Name = "xrSubreport1"
             Me.xrSubreport1.SizeF = New System.Drawing.SizeF(730F, 20F)
@@ -144,7 +143,6 @@ Namespace TreeViewReport
             ' 
             ' TopMargin
             ' 
-            Me.TopMargin.Dpi = 100F
             Me.TopMargin.HeightF = 50F
             Me.TopMargin.Name = "TopMargin"
             Me.TopMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -152,7 +150,6 @@ Namespace TreeViewReport
             ' 
             ' BottomMargin
             ' 
-            Me.BottomMargin.Dpi = 100F
             Me.BottomMargin.HeightF = 50F
             Me.BottomMargin.Name = "BottomMargin"
             Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -216,13 +213,13 @@ Namespace TreeViewReport
             Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin})
             Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() {Me.objectDataSource1})
             Me.DataSource = Me.objectDataSource1
-            Me.Margins = New DevExpress.Drawing.DXMargins(50, 50, 50, 50)
+            Me.Margins = New DevExpress.Drawing.DXMargins(50F, 50F, 50F, 50F)
             Me.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.Custom
             Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.Level})
             Me.ReportPrintOptions.DetailCountOnEmptyDataSource = 0
             Me.ReportPrintOptions.PrintOnEmptyDataSource = False
             Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() {Me.Title, Me.FieldCaption, Me.PageInfo, Me.DataField})
-            Me.Version = "16.1"
+            Me.Version = "23.1"
             CType((Me.xrTable1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me.objectDataSource1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me), System.ComponentModel.ISupportInitialize).EndInit()

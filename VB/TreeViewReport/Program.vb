@@ -1,8 +1,7 @@
+Imports DevExpress.Skins
+Imports DevExpress.UserSkins
 Imports System
 Imports System.Windows.Forms
-Imports DevExpress.UserSkins
-Imports DevExpress.Skins
-Imports DevExpress.LookAndFeel
 
 Namespace TreeViewReport
 
@@ -17,7 +16,6 @@ Namespace TreeViewReport
             Application.SetCompatibleTextRenderingDefault(False)
             Call BonusSkins.Register()
             Call SkinManager.EnableFormSkins()
-            UserLookAndFeel.Default.SetSkinStyle("DevExpress Style")
             Call Application.Run(New Form1())
         End Sub
     End Module
