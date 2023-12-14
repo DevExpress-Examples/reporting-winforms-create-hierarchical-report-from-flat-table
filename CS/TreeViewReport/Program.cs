@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
+﻿using DevExpress.Skins;
 using DevExpress.UserSkins;
-using DevExpress.Skins;
-using DevExpress.LookAndFeel;
+using System;
+using System.Windows.Forms;
 
 namespace TreeViewReport {
     static class Program {
@@ -18,7 +15,6 @@ namespace TreeViewReport {
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
             Application.Run(new Form1());
         }
     }
